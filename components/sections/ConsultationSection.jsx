@@ -1,4 +1,6 @@
+import Image from "next/image";
 import React from "react";
+import ConsultationForm from "../ConsultationForm";
 
 const ConsultationSection = () => {
   return (
@@ -9,10 +11,25 @@ const ConsultationSection = () => {
             <h1 className="capitalize font-bold text-3xl text-white">
               Schedule a free consultation
             </h1>
-            <span className="text-gray-300 mt-5 capitalize w-[558px]">
+            <span className="text-gray-400 text-md mt-5 capitalize w-[620px]">
               for more information about any of our services or to request a
               quote contact,
+              <br />
+              us today! we look forward to hearing from you - and we can't wait
+              to share our
+              <br />
+              ideas to help your business succeed.
             </span>
+            <Image
+              className="mt-10 rounded-md"
+              src="/assets/images/image3.jpg"
+              width={400}
+              height={200}
+              alt="Consultation Image"
+            />
+          </div>
+          <div className="pt-20">
+            <ConsultationForm />
           </div>
         </div>
       </div>
