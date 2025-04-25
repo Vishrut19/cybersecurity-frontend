@@ -2,6 +2,8 @@ import React from "react";
 import ClipInputs from "./ClipInputs";
 import ClipButtons from "./ClipButtons";
 import ClipButtonWithBackground from "./ClipButtonWithBackground";
+import { Input } from "./ui/input";
+import { Button } from "./ui/button";
 
 const footerSectionData = [
   {
@@ -39,9 +41,11 @@ const footerSectionData = [
 const Footer = () => {
   return (
     <>
-      <footer className="grid grid-cols-5 gap-6 bg-[radial-gradient(circle_at_top_left,_#1c1c2b,_#0f0f1b,_#10071e)] text-white px-12 pt-12 pb-8">
+      <footer className="grid grid-cols-5 gap-6 px-12 pt-12 pb-8">
         <div className="flex flex-col gap-6">
-          <h1 className="text-[#2B77FE] text-3xl font-extrabold">Logo</h1>
+          <h1 className="relative z-10 text-3xl font-extrabold px-4 py-2">
+            Logo
+          </h1>
           <div className="flex flex-col gap-1">
             <span className="text-sm text-gray-400">
               Stay safe from cyber threats
@@ -94,15 +98,20 @@ const Footer = () => {
         ))}
         <div className="flex flex-col gap-2">
           <h3 className="text-lg font-semibold text-white mb-3">Newsletter</h3>
-          <ClipInputs
+          <Input
             type="email"
             placeholder="Enter your email..."
-            className="border-[#2f2e37] rounded-[2px] w-full bg-transparent px-4 py-2 text-white placeholder:text-gray-200 outline-none"
+            className="mt-4 bg-transparent border border-[#D5FF3F] placeholder:text-white text-white rounded-[0.75rem_0_0.75rem_0] px-4 py-3 focus:ring-2 focus:ring-[#e4ff80]"
           />
-          <ClipButtonWithBackground buttonName={"Subscribe"} />
+          <Button
+            type="submit"
+            className="border border-dashed bg-[#D5FF3F2E] placeholder:text-white border-[#D5FF3F] w-[260px] h-[40px] text-[#D5FF3F]"
+          >
+            Submit
+          </Button>
         </div>
       </footer>
-      <div className="w-full border-t border-white/10 bg-[radial-gradient(circle_at_top_left,_#1c1c2b,_#0f0f1b,_#10071e)] text-center text-sm text-white/70 px-4 py-4">
+      <div className="w-full border-t border-white/10 text-center text-sm px-4 py-4">
         <span>Copyright © 2023 Bytagig</span>
       </div>
     </>

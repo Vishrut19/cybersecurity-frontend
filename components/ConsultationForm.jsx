@@ -3,7 +3,7 @@
 import React from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import ClipButtonWithBackground from "./ClipButtonWithBackground";
+import { Button } from "./ui/button";
 
 export default function ConsultationForm() {
   return (
@@ -17,14 +17,14 @@ export default function ConsultationForm() {
             <span>First Name *</span>
             <Input
               placeholder="First name"
-              className="mt-4 bg-transparent border border-white/20 text-white rounded-[0.75rem_0_0.75rem_0] px-4 py-3 focus:ring-2 focus:ring-violet-500"
+              className="mt-4 bg-transparent border border-[#D5FF3F] placeholder:text-white text-white rounded-[0.75rem_0_0.75rem_0] px-4 py-3 focus:ring-2 focus:ring-[#e4ff80]"
             />
           </div>
           <div className="flex flex-col">
             <span>Last Name *</span>
             <Input
               placeholder="Last name"
-              className="mt-4 bg-transparent border border-white/20 text-white rounded-[0.75rem_0_0.75rem_0] px-4 py-3 focus:ring-2 focus:ring-violet-500"
+              className="mt-4 bg-transparent border border-[#D5FF3F] placeholder:text-white text-white rounded-[0.75rem_0_0.75rem_0] px-4 py-3 focus:ring-2 focus:ring-[#e4ff80]"
             />
           </div>
         </div>
@@ -33,7 +33,7 @@ export default function ConsultationForm() {
           <span>Email *</span>
           <Input
             placeholder="Email"
-            className="mt-4 bg-transparent border border-white/20 text-white rounded-[0.75rem_0_0.75rem_0] px-4 py-3 focus:ring-2 focus:ring-violet-500"
+            className="mt-4 bg-transparent border border-[#D5FF3F] placeholder:text-white text-white rounded-[0.75rem_0_0.75rem_0] px-4 py-3 focus:ring-2 focus:ring-[#e4ff80]"
           />
         </div>
 
@@ -41,7 +41,7 @@ export default function ConsultationForm() {
           <span>Company </span>
           <Input
             placeholder="Company"
-            className="mt-4 bg-transparent border border-white/20 text-white px-4 py-3 rounded-[0.75rem_0_0.75rem_0] focus:ring-2 focus:ring-violet-500"
+            className="mt-4 bg-transparent placeholder:text-white border border-[#D5FF3F] text-white px-4 py-3 rounded-[0.75rem_0_0.75rem_0] focus:ring-2 focus:ring-[#e4ff80]"
           />
         </div>
 
@@ -49,15 +49,16 @@ export default function ConsultationForm() {
           <span>Where did you hear about CTRL?</span>
           <Textarea
             placeholder="Where did you hear about CTRL?"
-            className="mt-4 bg-transparent border border-white/20 text-white px-4 py-3 rounded-[0.75rem_0_0.75rem_0] focus:ring-2 focus:ring-violet-500"
+            className="mt-4 bg-transparent border border-[#D5FF3F] placeholder:text-white text-white px-4 py-3 rounded-[0.75rem_0_0.75rem_0]  focus:ring-2 focus:ring-[#e4ff80]"
           />
         </div>
 
-        <ClipButtonWithBackground
-          buttonName={"Submit"}
+        <Button
           type="submit"
-          style={{ width: "100%" }}
-        />
+          className="border border-dashed bg-[#D5FF3F2E] placeholder:text-white border-[#D5FF3F] w-[670px] h-[40px] text-[#D5FF3F]"
+        >
+          Submit
+        </Button>
       </form>
     </div>
   );

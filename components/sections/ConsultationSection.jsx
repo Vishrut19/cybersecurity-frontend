@@ -5,13 +5,26 @@ import ConsultationForm from "../ConsultationForm";
 const ConsultationSection = () => {
   return (
     <>
-      <div className="w-full min-h-screen bg-gradient-to-br from-[#0e0c2c] via-[#181045] to-[#1e0f4f] text-white shadow-[inset_0_0_80px_20px_rgba(165,89,255,0.2)]">
+      <div className="w-full min-h-screen text-white relative">
+        {/* Vector 9 - Gradient blur effect continuation */}
+        <div
+          className="absolute w-[500px] h-[500px] opacity-20 blur-[125px]"
+          style={{
+            background:
+              "linear-gradient(93.46deg, #D5FF3F 4.94%, #FFFFFF 82.09%)",
+            transform: "rotate(150deg)",
+            right: "-200px",
+            top: "-100px",
+            zIndex: "-1",
+          }}
+        />
+
         <div className="grid grid-cols-2 gap-6">
           <div className="flex flex-col items-start justify-center pt-40 ml-36">
-            <h1 className="capitalize font-bold text-3xl text-white">
+            <h1 className="uppercase font-bold text-3xl text-[#D5FF3F]">
               Schedule a free consultation
             </h1>
-            <span className="text-gray-400 text-md mt-5 capitalize w-[620px]">
+            <span className="text-white text-md mt-5 capitalize w-[620px]">
               for more information about any of our services or to request a
               quote contact,
               <br />

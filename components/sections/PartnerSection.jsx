@@ -43,8 +43,21 @@ const logoImages = [
 const PartnerSection = () => {
   return (
     <>
-      <div className="w-full min-h-screen flex flex-col items-center justify-center bg-[#0B0B1C] bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.05)_0%,_transparent_70%)]">
-        <h3 className="font-semibold text-[#fcf9fd] text-3xl text-center">
+      <div className="w-full min-h-screen flex flex-col items-center justify-center relative">
+        {/* Vector 9 - Gradient blur effect */}
+        <div
+          className="absolute w-[743.67px] h-[817.8px] opacity-20 blur-[125px]"
+          style={{
+            background:
+              "linear-gradient(93.46deg, #D5FF3F 4.94%, #FFFFFF 82.09%)",
+            transform: "rotate(150deg)",
+            right: "-200px",
+            bottom: "-400px",
+            zIndex: "-1",
+          }}
+        />
+
+        <h3 className="text-4xl font-bold text-[#D5FF3F] ml-3 uppercase mb-20">
           Partners
         </h3>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 justify-items-center mt-6">

@@ -44,7 +44,7 @@ export default function HeroSection() {
           type="ghost"
           className="border border-dashed bg-[#D5FF3F2E] border-[#D5FF3F] w-[300px] h-[60px] text-[#D5FF3F]"
         >
-          Schedule a 15 mins call"
+          Schedule a 15 mins call
         </Button>
       </div>
     </div>

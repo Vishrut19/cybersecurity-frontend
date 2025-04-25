@@ -1,5 +1,5 @@
 import React from "react";
-import ClipButtons from "../ClipButtons";
+import { Button } from "../ui/button";
 
 const BusinessSection = () => {
   return (
@@ -72,10 +72,12 @@ const BusinessSection = () => {
             you need to stay competitive.
           </span>
           <div className="mt-6">
-            <ClipButtons
-              style={{ background: "#201b37" }}
-              buttonName={"Learn More"}
-            />
+            <Button
+              type="ghost"
+              className="border border-dashed bg-[#D5FF3F2E] border-[#D5FF3F] w-[100px] h-[30px] text-[#D5FF3F]"
+            >
+              Learn More
+            </Button>
           </div>
         </div>
         <img
@@ -114,10 +116,12 @@ const BusinessSection = () => {
             you need to stay competitive.
           </span>
           <div className="mt-6 -ml-[490px]">
-            <ClipButtons
-              style={{ background: "#201b37" }}
-              buttonName={"Learn More"}
-            />
+            <Button
+              type="ghost"
+              className="border border-dashed bg-[#D5FF3F2E] border-[#D5FF3F] w-[100px] h-[30px] text-[#D5FF3F]"
+            >
+              Learn More
+            </Button>
           </div>
         </div>
       </div>

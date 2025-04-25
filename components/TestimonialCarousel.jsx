@@ -43,6 +43,10 @@ export default function TestimonialsCarousel() {
 
   return (
     <div className="text-white py-20 px-4 text-center">
+      <h1 className="text-4xl uppercase mb-20 text-[#D5FF3F] font-extrabold">
+        FlagShip Services
+      </h1>
+
       <div className="flex justify-center gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory">
         {testimonials.map((testimonial, index) => (
           <Card
