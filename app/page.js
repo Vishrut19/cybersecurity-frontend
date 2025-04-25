@@ -14,8 +14,8 @@ export default function Home() {
       <Header />
       <main className="flex flex-col row-start-2 items-center sm:items-start">
         <HeroSection />
-        <WeOfferSection />
         <BusinessSection />
+        <WeOfferSection />
         <RecommendationSection />
         <FaqSection />
         <PartnerSection />

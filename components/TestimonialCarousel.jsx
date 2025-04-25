@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
@@ -35,7 +35,7 @@ export default function TestimonialsCarousel() {
   const [current, setCurrent] = useState(0);
 
   return (
-    <div className="bg-[#1e1e33] text-white py-20 px-4 text-center">
+    <div className=" text-white py-20 px-4 text-center">
       <h2 className="text-3xl md:text-4xl font-bold mb-4">
         Recommendations From Past Customers
       </h2>

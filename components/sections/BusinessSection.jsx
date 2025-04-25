@@ -3,7 +3,35 @@ import ClipButtons from "../ClipButtons";
 
 const BusinessSection = () => {
   return (
-    <section className="w-full min-h-screen px-8 py-20 bg-gradient-to-br from-[#201b37] via-[#1a1333] to-[#100c2a] text-white">
+    <section className="w-full min-h-screen px-8 py-20 relative overflow-hidden">
+      {/* Vector blur effect - continuing from HeroSection */}
+      <div
+        className="absolute w-[320px] h-[380px] opacity-90"
+        style={{
+          left: "1473.96px",
+          top: "-150px",
+          background:
+            "linear-gradient(93.46deg, #D5FF3F 4.94%, #FFFFFF 82.09%)",
+          filter: "blur(100px)",
+          transform: "rotate(150deg)",
+        }}
+        aria-hidden="true"
+      />
+
+      {/* Vector 8 - middle left blur effect */}
+      <div
+        className="absolute w-[500px] h-[500px] opacity-20"
+        style={{
+          left: "-100px",
+          top: "300px",
+          background:
+            "linear-gradient(93.46deg, #D5FF3F 4.94%, #FFFFFF 82.09%)",
+          filter: "blur(125px)",
+          transform: "rotate(150deg)",
+        }}
+        aria-hidden="true"
+      />
+
       <div className="flex flex-col items-center justify-center">
         <h2 className="text-4xl font-bold mb-6">Why Businesses Choose Us</h2>
         <div className="flex flex-col justify-center items-center">
